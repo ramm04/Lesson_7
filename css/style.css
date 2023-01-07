@@ -1,7 +1,9 @@
 html {
+    /* для того, чтобы размеры элементов не росли */
     box-sizing: border-box;
 }
 
+/* Чтобы у всех элементо размеры были как у родителей */
 *,
 *::before,
 *::after {
@@ -9,22 +11,30 @@ html {
 }
 
 a {
+    /* Чтобы цвет ссылок был как у шрифта всего документа и чтоб не курсивом  */
     color: inherit;
     text-decoration: none;
 }
 
 img {
-    max-width: 1200px;
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
     font-family: "font", sans-serif;
 }
 
 /* glob */
+
+/* Для сброса визуальных атрибутов списков */
 .list-reset {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* Для сброса стилей кнопок */
 .btn-reset {
     padding: 0;
     border: none;
@@ -32,10 +42,12 @@ img {
     cursor:pointer;
 }
 
+/* Дополнительный класс */
 .flex {
     display: flex;
 }
 
+/* Дополнительный класс для всех секций */
 .container {
     width: 1200px;
     padding: 0 15px;
